@@ -60,9 +60,9 @@
 
 /* Style the body */
 
-    
+
 .wrapper {
-    display: flex;  
+    display: flex;
     flex-flow: row wrap;
     text-align: center;
     font-family: Courier, monospace;
@@ -85,7 +85,7 @@
 }
 
 .footer {
-  
+
 }
 
 .main {
@@ -94,7 +94,7 @@
 }
 
 .aside-1 {
- 
+
 }
 
 .aside-2 {
@@ -119,10 +119,10 @@
 /* Large screens */
 @media all and (min-width: 800px) {
     /* We invert order of first sidebar and main
-   * And tell the main element to take twice as much width as the other two sidebars 
+   * And tell the main element to take twice as much width as the other two sidebars
    */
   .main    { flex: 3 0px; }
-  .aside-1 { order: 1; } 
+  .aside-1 { order: 1; }
   .main    { order: 2; }
   .aside-2 { order: 3; }
   .footer  { order: 4; }
@@ -154,4 +154,12 @@ body {
 	left:0;
 	width:100%;
 	height:100%;
+}
+
+/* responsive images */
+
+.responsive {
+  width: 100%;
+  max-width: 800  px;
+  height: auto;
 }
