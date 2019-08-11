@@ -2,10 +2,24 @@
   box-sizing: border-box;
 }
 
+/* Style the links inside the navigation bar */
+
+
 .topnav {
   overflow: hidden;
   background-color: ;
 }
+
+.logo {
+  float: ;
+  width: 100%;
+  max-width: 125px;
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .logo {display: none;}
+  }
 
 /* Style the links inside the navigation bar */
 .topnav a {
