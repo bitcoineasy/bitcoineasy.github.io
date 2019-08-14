@@ -13,7 +13,7 @@
 .logo {
   float: ;
   width: 100%;
-  max-width: 125px;
+  max-width: 120px;
   height: auto;
 }
 
@@ -175,5 +175,10 @@ body {
 .responsive {
   width: 100%;
   max-width: 800px;
+  height: auto;
+}
+
+.aside-media {
+  width: 100%;
   height: auto;
 }
