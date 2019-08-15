@@ -9,10 +9,6 @@
   height: auto;
 }
 
-@media screen and (max-width: 600px) {
-  .topnav .logo {display: none;}
-  }
-
 .topnav {
   overflow: hidden;
   background-color: white;
