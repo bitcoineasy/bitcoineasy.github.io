@@ -14,24 +14,39 @@
 
     <div class="wrapper">
 
-        <topnav class="topnav" id="myTopnav">
-            <a href="index.html" class="active">Home</a>
-            <a href="resources.html">Resources</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </topnav>
+      <div class="navbar" id="stickynavbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="resources.html">Resources</a>
+        <a href="javascript:void(0);" class="icon" onclick="responsiveNavbarFunction">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
 
-        <script>
-            function myFunction() {
-              var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
-                x.className += " responsive";
-              } else {
-                x.className = "topnav";
-              }
-            }
-        </script>
+      <script>
+      window.onscroll = function() {stickyFunction()};
+
+      var stickynavbar = document.getElementById("stickynavbar");
+      var sticky = stickynavbar.offsetTop;
+
+      function stickyFunction() {
+        if (window.pageYOffset >= sticky) {
+          stickynavbar.classList.add("sticky")
+        } else {
+          stickynavbar.classList.remove("sticky");
+        }
+      }
+      </script>
+
+      <script>
+      function responsiveNavbarFunction() {
+        var x = document.getElementById("stickynavbar");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+      </script>
 
         <header class="header">
             <img src="https://raw.githubusercontent.com/bitcoineasy/images/master/Bitcoin.jpg" alt="Bitcoin logo" class="logo">

@@ -14,24 +14,39 @@
 
     <div class="wrapper">
 
-        <topnav class="topnav" id="myTopnav">
-            <a href="index.html" class="active">Home</a>
-            <a href="resources.html">Resources</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </topnav>
+      <div class="navbar" id="stickynavbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="resources.html">Resources</a>
+        <a href="javascript:void(0);" class="icon" onclick="responsiveNavbarFunction">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
 
-        <script>
-            function myFunction() {
-              var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
-                x.className += " responsive";
-              } else {
-                x.className = "topnav";
-              }
-            }
-        </script>
+      <script>
+      window.onscroll = function() {stickyFunction()};
+
+      var stickynavbar = document.getElementById("stickynavbar");
+      var sticky = stickynavbar.offsetTop;
+
+      function stickyFunction() {
+        if (window.pageYOffset >= sticky) {
+          stickynavbar.classList.add("sticky")
+        } else {
+          stickynavbar.classList.remove("sticky");
+        }
+      }
+      </script>
+
+      <script>
+      function responsiveNavbarFunction() {
+        var x = document.getElementById("stickynavbar");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+      </script>
 
         <header class="header">
             <img src="https://raw.githubusercontent.com/bitcoineasy/images/master/Bitcoin.jpg" alt="Bitcoin logo" class="logo">
@@ -59,24 +74,32 @@
             <h2 id="question1">What is Bitcoin?</h2>
             <p>Bitcoin is digital cash that can be used without a third party (a company in between of the sender and the receiver that is responsible for making the transactions).</p>
             <p>Why is this significant? It works instantly, 24/7 and you can send it anywhere in the world to anybody you want. No bank account, credit card, or paypal account required.</p>
+
             <h2 id="question2">How is Bitcoin different from Paypal, Apple Pay or other payment providers?</h2>
             <p>There is no "Bitcoin company" and you don't need to sign up anywhere. All you need is a Bitcoin wallet. There are paper wallets, software wallets and hardware wallets. These wallets contain the keys to the Bitcoins.</p>
             <p>Bitcoins are not stored on your computer or phone, they are stored on the decentralized Bitcoin computer network (Blockchain) and can be accessed with a password (also called private key).</p>
             <p>Bitcoin is the most secure computer network in the world. Since its invention in 2009 it has never been hacked. The "Bitcoin hacks" that you have heard about involved companies that did't protect the private keys well enough. Imagine it like this: Bitcoin is like Gold in an indestructible safe. You can only get it if you find the key.</p>
+
             <h2 id="question3">Does Bitcoin unnecessarily waste too much energy?</h2>
             <p>No... (Answer will follow shortly). For now look at how much energy Bitcoin comsumes compared to other technologies <a href="https://cbeci.org/comparisons/" target="_blank">cbeci.org/comparisons</a></p>
+
             <h2 id="question4">Does the Bitcoin price go up and down too much? (Is it too volatile?) </h2>
             <a href="https://raw.githubusercontent.com/bitcoineasy/images/master/bitcoin_volatility.jpg" target="_blank">  <img src="https://raw.githubusercontent.com/bitcoineasy/images/master/bitcoin_volatility.jpg" alt="Bitcoin price history chart" class="responsive"/></a>
             <p>The above image shows the history of the Bitcoin price until 10. August 2019. Bitcoin goes up and down like nothing else.</p>
             <p>(Answer will follow shortly)</p>
+
             <h2 id="question5">Is Bitcoin better than normal money?</h2>
+            <p>There will only ever be 21 million Bitcoin. Normal money like US Dollars or Euros dont have a fixed supply and can be created by the government and by private banks. This gives them too much power and inflates the money supply. The rising money supply makes the money loose value every year. This is the best explanation on how the process of money creation works:</p>
+            <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/iFDe5kUUyT0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
             <h2 id="question6">Why is the separation between money and state important?</h2>
             <p>(answer will follow shortly) Quantitative Easing, Currency Wars, Debt...</p>
             <h2 id="question7">Who writes the code for Bitcoin?</h2>
             <p>Bitcoin is an open source project and everybody can contribute to the Bitcoin code on Github <a href="https://github.com/bitcoin/bitcoin" target="_blank">github.com/bitcoin/bitcoin</a></p>
+
             <div class="ellipsis">
-            <p>Here is the list of everybody who has contributed to the open source Bitcoin code <a href="https://github.com/bitcoin/bitcoin/graphs/contributors" target="_blank">Bitcoin Github contributors</a></p>
-          </div>
+            <p>Here is the list of everybody who has contributed to the open source Bitcoin code <a href="https://github.com/bitcoin/bitcoin/graphs/contributors" target="_blank">Bitcoin Github contributors</a></p></div>
+
             <h2 id="question8">How does Bitcoin work?</h2>
             <p>Bitcoins are created in a process called mining which also makes Bitcoin so secure. Computers do a lot of calculations and get Bitcoins as a reward. To "hack" Bitcoin you would need at least 51% of all the energy that all Bitcoin miners in the entire world are using for a prolonged period of time.</p>
 
