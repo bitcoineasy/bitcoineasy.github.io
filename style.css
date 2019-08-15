@@ -2,24 +2,9 @@
   box-sizing: border-box;
 }
 
-/* Style the links inside the navigation bar */
-
-
 .topnav {
   overflow: hidden;
   background-color: ;
-}
-
-.logo {
-  float: none;
-  width: 100%;
-  max-width: 125px;
-  height: auto;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: white;
 }
 
 /* Style the links inside the navigation bar */
