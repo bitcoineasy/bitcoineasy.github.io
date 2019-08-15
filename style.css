@@ -2,6 +2,17 @@
   box-sizing: border-box;
 }
 
+.logo {
+  float: ;
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .logo {display: none;}
+  }
+
 .topnav {
   overflow: hidden;
   background-color: white;
