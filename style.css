@@ -60,6 +60,12 @@
 
 /* Style the body */
 
+.logo {
+  float: ;
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+}
 
 .wrapper {
     display: flex;
