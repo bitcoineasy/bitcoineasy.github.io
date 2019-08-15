@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+/* Style the links inside the navigation bar */
+
+
+.topnav {
+  overflow: hidden;
+  background-color: ;
+}
+
 .logo {
   float: none;
   width: 100%;
