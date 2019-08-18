@@ -5,6 +5,7 @@
 .navbar {
   overflow: hidden;
   background-color: white;
+  transition: 0.5s;
 }
 
 /* Style the links inside the navigation bar */
