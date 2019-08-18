@@ -35,10 +35,6 @@
 }
 
 
-.content {
-  padding: 16px;
-}
-
 .sticky {
   position: fixed;
   top: 0;
@@ -91,6 +87,7 @@
     text-align: left;
     font-family: Courier, monospace;
     margin: 0;
+    padding: 15px;
 
 }
 
@@ -116,6 +113,7 @@ text-align: center;
 .main {
   text-align: left;
   font-size: 18px;
+  line-height: 1.5;
 
 }
 
@@ -152,11 +150,6 @@ text-align: center;
   .main    { order: 2; }
   .aside-2 { order: 3; }
   .footer  { order: 4; }
-}
-
-
-.main {
-    line-height: 1.5;
 }
 
 .resources_list li {
