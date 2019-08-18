@@ -109,7 +109,7 @@ text-align: center;
 }
 
 .footer {
-
+  text-align: center;
 }
 
 
@@ -287,7 +287,8 @@ body.night .content h2
 
 body.night .content #toc_container,
 body.night .content .toc_list a,
-body.night .content a
+body.night .content a,
+body.night .footer
 {
   color: #D48872;
 }
