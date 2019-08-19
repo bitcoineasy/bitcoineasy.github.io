@@ -12,6 +12,9 @@
 
 <body>
 
+  <div class="toggle"></div>
+
+
     <div class="content">
 
       <div class="navbar" id="stickynavbar">
@@ -39,7 +42,7 @@
         </header>
 
         <article class="main">
-          <font size="2.5">For an extensive list of wallets, learning materials, podcasts, developer and merchant tools go to <a href="https://www.bitcoin-only.com">bitcoin-only.com</a>. For a few selected resources stay here.</font> 
+          <font size="2.5" color="grey">For an extensive list of wallets, learning materials, podcasts, developer and merchant tools go to <a href="https://www.bitcoin-only.com">bitcoin-only.com</a>. For a few selected resources stay here.</font>
 
             <h2>Basic resources</h2>
 
@@ -74,6 +77,7 @@
             </ul>
 
 
+
         </article>
 
         <aside class="aside aside-1"><ul class="resources_list" style="list-style-type:none;">
@@ -97,6 +101,16 @@
         <aside class="aside aside-2"> <a href="https://alternative.me/crypto/fear-and-greed-index/" target="_blank"><img src="https://alternative.me/crypto/fear-and-greed-index.png" class="aside-media" alt="Latest Crypto Fear & Greed Index" /></a></aside>
         <footer class="footer">Donations BTC: 3BfT2roBHqdd164ZJzGzSNoZMSZvjLVD8F</footer>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.toggle').click(function(){
+        $('.toggle').toggleClass('active')
+        $('body').toggleClass('night')
+    })
+})
+</script>
 
 </body>
 
