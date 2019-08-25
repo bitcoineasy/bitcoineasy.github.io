@@ -119,14 +119,6 @@
 
 
 
-
-
-
-
-
-
-
-
 /* Style the body */
 .logo {
   float: ;
@@ -143,6 +135,7 @@
   font-family: Courier, monospace;
   margin: 0;
   padding: 15px;
+
 }
 
 /* We tell all items to be 100% width, via flex-basis */
@@ -167,7 +160,15 @@
   text-align: left;
   font-size: 18px;
   line-height: 1.5;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+
 }
+
+
 
 .aside-1 {}
 
