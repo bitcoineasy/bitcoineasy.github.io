@@ -25,25 +25,10 @@
   color: black;
 }
 
-.navbar a.active {
-  background-color: ;
-  color: ;
-}
 
 /* Hide the link that should open and close the topnav on small screens */
 .navbar .icon {
   display: none;
-}
-
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
 }
 
 

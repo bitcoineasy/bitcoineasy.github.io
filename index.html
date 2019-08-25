@@ -20,9 +20,11 @@
 
     <div class="content">
 
-      <div class="navbar" id="stickynavbar">
+      <div class="navbar" id="mynavbar">
         <a href="index.html">Home</a>
         <a href="resources.html">Resources</a>
+        <a href="faqs.html">FAQs</a>
+
         <a href="javascript:void(0);" class="icon" onclick="responsiveNavbarFunction()">
           <i class="fa fa-bars"></i>
         </a>
@@ -30,7 +32,7 @@
 
       <script>
       function responsiveNavbarFunction() {
-        var x = document.getElementById("stickynavbar");
+        var x = document.getElementById("mynavbar");
         if (x.className === "navbar") {
           x.className += " responsive";
         } else {

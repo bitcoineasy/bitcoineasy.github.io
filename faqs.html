@@ -20,7 +20,7 @@
 
   <div class="content">
 
-    <div class="navbar" id="stickynavbar">
+    <div class="navbar" id="mynavbar">
       <a href="index.html">Home</a>
       <a href="resources.html">Resources</a>
       <a href="faqs.html">FAQs</a>
@@ -31,7 +31,7 @@
 
     <script>
       function responsiveNavbarFunction() {
-        var x = document.getElementById("stickynavbar");
+        var x = document.getElementById("mynavbar");
         if (x.className === "navbar") {
           x.className += " responsive";
         } else {
@@ -64,10 +64,10 @@
 
         <p>Lets compare Bitcoin to another Cryptocurrency.
 
-        <p>One Ethereum costs 200$ today. If you buy 1 Ethereum you own 0.000001% of all Ethereum. If you buy one Bitcoin you own 0.000005% of all Bitcoin.</p>
+          <p>One Ethereum costs 200$ today. If you buy 1 Ethereum you own 0.000001% of all Ethereum. If you buy one Bitcoin you own 0.000005% of all Bitcoin.</p>
 
-        <p>If you spend 10,000$ on 50 Ethereum you own 0.00005% of all Ethereum. You get 50 Ethereum instead of 1 Bitcoin but your percentage ownership in the network only increases by 10. In other words Bitcoin is only 10 times more expensive than
-        <p>Ethereum instead of 50 times as the price difference suggests.</p>
+          <p>If you spend 10,000$ on 50 Ethereum you own 0.00005% of all Ethereum. You get 50 Ethereum instead of 1 Bitcoin but your percentage ownership in the network only increases by 10. In other words Bitcoin is only 10 times more expensive than
+            <p>Ethereum instead of 50 times as the price difference suggests.</p>
 
       </div>
 
@@ -77,52 +77,40 @@
         <p>Bitcoins are not backed by anything. Your government currency isn’t backed by anything either. The gold standard was abolished by President Nixon in 1971. Before 1971 the USD in theory was redeemable for gold. Now over 90% of government
           fiat currency is just numbers saved on computers.</p>
 
-          <p>Bitcoins have different properties that the market trusts. The inflation is fixed and cant be changed. There will only ever be 21 million Bitcoins. This is provable and verifiable. Bitcoin has never been hacked in its 10 years of existence
+        <p>Bitcoins have different properties that the market trusts. The inflation is fixed and cant be changed. There will only ever be 21 million Bitcoins. This is provable and verifiable. Bitcoin has never been hacked in its 10 years of existence
           thanks to the proof of work system that makes Bitcoin the most secure computer network in the world.
           These two properties make Bitcoin sound money like gold.</p>
       </div>
 
       <button class="accordion">
-        Apart from Bitcoin, which ones are other interesting virtual coins, and why is that?</button>
+        Is any cryptocoin capable of knocking Bitcoin off its #1 position?</button>
       <div class="panel">
         <br>
-        <p>Big claims and promises are made regarding the advantages and innovations of other Cryptocurrencies. This is mainly because of marketing teams, evangelists and the community of people invested in those Altcoins.
-          Without any knowledge on how Blockchains work one is easily swept away by the marketing language. Here are some of the most important aspects to know.</p>
 
-          <h3>Simple vs complex programming languages</h3>
+        <p> Theoretically it is possible but it is very unlikely. Bitcoin has been number 1 for 10 years. Replacing a dominant technology is not easy because it has an established brand and strong network effects (companies, developers, users). The
+          contestant has to be many times better than the current leader. There are only a handful cryptocurrencies with little improvements over Bitcoin and these improvements can be integrated into the Bitcoin code if they really prove to be big.
+        </p>
 
-          <p>Bitcoin falls into the money category. Bitoin is also programmable but not to the same extent as Ethereum or other smart contracts platforms like Tezos.</p>
+        <p> Every other cryptocurrency tries to market itself as somehow superior to Bitcoin. The supporters and marketers of these cryptocurrencies use transaction speed and cost as a metric for superiority. What they don’t tell you is that their
+          technology sacrifices safety for cost and speed. Blockchains are inherently slow because every transaction has to be recorded on every node in the blockchain (computer in the decentralized computer network). So to increase speed these
+          projects</p>
 
-          <p>Bitcoin has a programming language that has limits to what programs can be written in it. Smart contracts platforms use touring complete languages that allow you to write any program you want.</p>
+          <ol>
+        <li>Increase block size</li>
+        <li>reduce block propagation time</li>
+        <li>use POS instead of POW</li>
+      </ol>
 
-          <p>The disadvantages of touring completeness is that it also allows you to make serious mistakes and introduce bugs into the code. Once you write bugs into a Blockchain they can not be erased. Hundreds of millions have been lost because of
-          this on Ethereum.</p>
+        <p> Increased block size increases speed and reduces cost because more transactions can be processed in each block. As fees increase when transactions compete for block space, larger blocks also reduce cost. This is only a temporary solution because the block size has to be increased proportionally to the use of the network. If it is almost free to use the blockchain people will use up the space to save any data they like in the blocks like property titles, contracts, images, anything they like really. So as transactions and files fill up the blocks and start competing for space, speed slows down and fees rise forcing another increase of block size. This becomes a vicious cycle.</p>
 
-          <p>The advantages are clear. People are using Ethereum to build decentralized insurance, lending, stable money, digital collectibles, exchanges and much more. These applications are called dapps or decentralized applications. Many of these
-          dapps use their own tokens (other word for cryptocurrency). Most have issued and sold these cryptocurrencies to raise money and often it is not clear what other purpose they have. Be especially careful when buying dapp tokens.</p>
+        <p> Bitcoins solution is to have a fixed block size and a fee market where network users compete for space by paying fees. Layer 2 scaling solutions like the Lightning Network allow for cheap and fast transactions with Bitcoin.</p>
 
-          <h3>Different value propositions</h3>
-          <p>The value proposition of Ether, the currency on Ethereum, is that you need it for every transaction on the network.</p>
+        <p> A reduced block propagation time (every 10 minutes in Bitcoin) allows more transactions over a smaller period of time. This solution reduced safety because the time between blocks is an important feature against double spend attacks.</p>
 
-          <p>The value proposition of Bitcoin is that the code is safe and robust, the inflation is fixed and there will only be 21 million Bitcoins.</p>
+        <p> The more mining energy is spent between blocks the harder it becomes to double spend. So while businesses like to wait 1 to 3 confirmations for Bitcoin (10 to 30 minutes) they like to wait 20 to 50 confirmations for other cryptocurrencies
+          to make sure that the transaction has not been double spent.</p>
 
-          <h3>Scaling Blockchains</h3>
-
-          <p>Because you can do so much on Ethereum, the blockchain size is growing exponentially. Blockchains are slow compared to conventional servers and 1000 times more expensive to run. It is not clear yet if Ethereum or other smart contracts
-          platforms will ever become viable for mass adoption.
-
-          <p>Bitcoin and Ethereum use Proof of Work (using energy for mining to secure the network). Ethereum wants to switch to Proof of Stake (using stake (coins) to secure the network through financial penalties.) It is not clear if it will work and
-          if Ethereum will be decentralized enough since this has never been done before.
-
-          <p>Bitcoins Blockchain on the other hand is growing slowly and will fit on a normal laptop for many decades to come. This is important for decentralization. Blockchains only make sense if they are decentralized enough. Everybody in the world
-          needs to be able to run a copy of the blockchain.
-
-          <h3>Privacy coins</h3>
-
-          <p>One noteworthy subcategory of the money coins are the privacy coins. They don’t record transactions on the Blockchain and therefore it is impossible to know who the participants in the network are. Check out the Grin and Monero privacy
-          coins.
-
-          <p>Apart from Bitcoin, Ethereum and Grin, there are not many other interesting projects in the cryptocurrency space.</p>
+        <p> POS tries to use a system of incurring financial penalties instead of spending energy (POW) for safety. POS is unproven and untested at scale and would be less secure than POW.</p>
 
 
       </div>
@@ -140,6 +128,26 @@
 
         <p>A convenient way for maximum security are hardware wallets like the Ledger Nano. The private key of a hardware wallet will never be on a device with internet and therefore impossible for hackers to steal.</p>
         <p>Bitcoin has never been hacked in its 10 years of existence. The stories you read about Bitcoin being hacked always refer to companies that didn’t securely store their private keys.</p>
+      </div>
+
+      <button class="accordion">Is Bitcoin used by terrorists and money launderers?</button>
+
+      <div class="panel">
+
+        Yes, terrorists use cars, planes, ships, shoes, credit cards, Visa, Paypal, eBay, dollars, euros and Bitcoin.
+        Bitcoin is not their first choice though.
+
+        <ul class="resources_list" style="list-style-type:square;">
+          <li><a href="https://bitcoinist.com/bitcoin-force-against-banks-laundering-2-trillion-per-year/" target="_blank">Bitcoin Is Nightmare For Banks Laundering $2 Trillion Every Year</a></li>
+          <li><a href="https://www.bloomberg.com/news/articles/2019-03-09/money-to-launder-here-s-how-hint-find-a-bank-quicktake" target="_blank">Money to Launder? Here's How (Hint: Find a Bank)</a></li>
+          <li><a href="https://www.cbsnews.com/news/how-the-danske-bank-money-laundering-scheme-involving-230-billion-unraveled-60-minutes-2019-05-19/" target="_blank">How the Danske Bank money-laundering scheme involving $230 billion unraveled</a>
+          </li>
+          <li><a href="https://www.theguardian.com/business/2012/jul/17/hsbc-executive-resigns-senate" target="_blank">HSBC 'sorry' for aiding Mexican drugs lords, rogue states and terrorists </a></li>
+          <li><a href="https://www.independent.co.uk/news/uk/crime/london-is-now-the-global-money-laundering-centre-for-the-drug-trade-says-crime-expert-10366262.html" target="_blank">London is now the global money-laundering centre for the drug
+              trade, says crime expert </a></li>
+          <li><a href="https://www.npr.org/sections/thetwo-way/2017/08/11/542748232/isis-used-ebay-as-part-of-terror-network-unsealed-fbi-affidavit-shows?t=1565438677422" target="_blank">ISIS Used eBay As Part Of Terror Network, Unsealed FBI
+              Affidavit Shows </a></li>
+        </ul>
       </div>
 
       <script>
