@@ -160,11 +160,7 @@
   text-align: left;
   font-size: 18px;
   line-height: 1.5;
-  word-break: break-word;
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
+
 
 }
 
@@ -191,6 +187,18 @@
   }
 }
 
+
+@media screen and (max-width:800px) {
+  .main {
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+}
+
+
 /* Large screens */
 @media all and (min-width: 800px) {
 
@@ -199,6 +207,7 @@
    */
   .main {
     flex: 3 0px;
+
   }
 
   .aside-1 {
