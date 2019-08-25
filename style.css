@@ -268,16 +268,7 @@
   text-align: center;
 }
 
-/* night mode */
-body {
-  margin: 0;
-  padding: 0;
-  transition: 0.5s;
-}
 
-body.night {
-  background: #142634;
-}
 
 .toggle {
   position: absolute;
@@ -335,6 +326,18 @@ body.night {
   margin-bottom: 20px;
 }
 
+
+/* night mode */
+body {
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+}
+
+body.night {
+  background: #142634;
+}
+
 body.night .content h1,
 body.night .content p,
 body.night .content h2,
@@ -354,6 +357,10 @@ body.night .footer {
 body.night .content .navbar,
 body.night .panel {
   background-color: #142634;
+}
+
+body.night .navbar a:hover {
+  color: black;
 }
 
 body.night .dropdown .dropbtn
