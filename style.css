@@ -253,6 +253,11 @@
   height: auto;
 }
 
+.tradingview-widget-container {
+  width: 100%;
+  height: auto;
+}
+
 .aside-media {
   width: 100%;
   height: auto;
