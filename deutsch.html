@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bitcoin, einfach erklärt.</title>
+  <meta name="Bitcoin, einfach erklärt" content="Einfach verständliche Informationen zu Bitcoin">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://raw.githubusercontent.com/bitcoineasy/images/master/bitcoinfavicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="toggle"></div>
+  <div class="content">
+
+    <div class="navbar" id="mynavbar">
+      <a href="deutsch.html">Home</a>
+      <a href="faqs.html">FAQs</a>
+      <div class="dropdown">
+     <button class="dropbtn"><i class="fas fa-language fa-1.5x"></i>
+       <i class="fa fa-caret-down"></i>
+     </button>
+     <div class="dropdown-content">
+       <a href="index.html">Englisch</a>
+     </div>
+   </div>
+      <a href="javascript:void(0);" class="icon" onclick="responsiveNavbarFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <script>
+      function responsiveNavbarFunction() {
+        var x = document.getElementById("mynavbar");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
+
+    <header class="header">
+      <img src="https://raw.githubusercontent.com/bitcoineasy/images/master/Bitcoin.png" alt="Bitcoin logo" class="logo">
+      <h1>Bitcoin, einfach erklärt.</h1>
+      <font color="red">Diese Seite ist noch in Bearbeitung und wird vom Englischen in das Deutsche übersetzt.</font>
+
+    </header>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i style='font-size:24px' class='fas'>&#xf062;</i></button>
+
+
+
+    <article class="main">
+      <div id="toc_container">
+        <p class="toc_title">Inhalte</p>
+        <ol class="toc_list">
+          <li><a href="#whatisbitcoin">Was ist Bitcoin?</a>
+          <li><a href="#bitcoindifferent">Wie unterscheidet sich Bitcoin zu anderen Zahlungsdienstleistern?</a>
+          <li><a href="#energy">Verbraucht Bitcoin unnötig viel Strom?</a></li>
+          <li><a href="#upanddown">Geht der Bitcoin Preis zu viel hoch und runter?</a></li>
+          <li><a href="#bitcoinbetter">Ist Bitcoin besser als normales Geld?</a></li>
+          <!--<li><a href="#moneyandstate">Why is the separation of money and state important?</a></li>-->
+          <li><a href="#whocodes">Wer schreibt den Code für Bitcoin?</a></li>
+          <li><a href="#howitworks">Wie funkioniert Bitcoin?</a></li>
+          <li><a href="#stateattack">Könnte ein Staat Bitcoin angreifen?</a></li>
+          <li><a href="#toolateforbitcoin">Ist es zu spät um Bitcoins zu kaufen?</a></li>
+
+        </ol>
+      </div>
+      <i style="font-size:15px">last updated 25. August 2019</i>
+      <h2 id="whatisbitcoin">Was ist Bitcoin?</h2>
+      <p>Bitcoin ist digitales Geld das ohne einen Mittelmann genutzt werden kann. Ein Mittelmann ist ein Unternehmen, dass zwischen Sender und Empfänger steht und die Regeln und Kosten für Transaktionen festlegt.</p>
+      <p>Was ist daran besonders? Bitcoin funkioniert rund um die Uhr ohne Unterbrechungen und kann überall auf der Welt gesendet werden. Sender und Empfänger brauchen kein Bankkonto und müssen sich nirgendwo anmelden.</p>
+      <br>
+
+      <h2 id="bitcoindifferent">Was unterscheidet Bitcoin von Paypal, Apple Pay und anderen Zahlungsdienstleistern?</h2>
+      <p>Es gibt keine Bitcoin Firma und man muss sich nirgendwo anmelden. Benötigt wird nur eine Bitcoin Wallet. Es gibt Papierwallets, Softwarewallets and Hardwarewallets. Diese Wallets bewahren die Schlüssel zu den Bitcoins auf.</p>
+      <p>Bitcoins werden nicht auf dem Computer oder auf dem Smartphone gespeichert, sie werden auf dem dezentralisierten Computernetzwerk (Bitcoin Blockchain) gespeichert. Ein Schlüssel (private key) erlaubt die Bitcoins auszugeben.</p>
+      <p>Bitcoin ist das sicherste Computernetzwerk der Welt. Seit der Erfindung in 2009 wurde es noch nie gehackt. Die Bitcoin hacks von denen man in den nachrichten hört beziehen sich auf Unternehmen die Ihre Bitcoin schlüssel nicht gut verwahrt
+        haben.
+        Stelle es dir so vor. Bitcoin ist wie Gold in einem unzerstörbaren Trezor. Es ist nicht möglich Ihn aufzubrechen. Wenn man jedoch den Schlüssel hat, kommt man natürich ganz leicht dran.</p>
+      <br>
+      <h2 id="energy">Verbraucht Bitcoin unnötig viel Energie?</h2>
+      <p>Die gesamte Wasser-, Biogas-, Solar-, und Windenergie dieser Welt könnten Bitcoin 100 mal mit Strom versorgen. Die Energie die von Geräten im Standbymodus in den USA verbraucht wird könnte Bitcoin 3,5 mal mit Strom versorgen. Hier kannst du
+        diese und andere Vergleiche finden: <a href="https://cbeci.org/comparisons/" target="_blank">cbeci.org/comparisons</a></p>
+      <p>Die beste Zusammenfassung zu Bitcoins Energieverbrauch die ich finden konnte wurde als Artikel von der International Energy Agency veröffentlicht: <a href="https://www.iea.org/newsroom/news/2019/july/bitcoin-energy-use-mined-the-gap.html"
+          target="_blank">IEA Bitcoin energy consumption</a></p>
+      <br>
+
+      <h2 id="upanddown">Geht der Bitcoinpreis zu sehr hoch und runter? (Ist Bitcoin zu volatil?) </h2>
+      <a href="https://raw.githubusercontent.com/bitcoineasy/images/master/bitcoin_volatility.jpg" target="_blank"> <img src="https://raw.githubusercontent.com/bitcoineasy/images/master/bitcoin_volatility.jpg" alt="Bitcoin price history chart"
+          class="responsive" /></a>
+      <p>Im oberen Bild sieht man die gesamte Preisgeschichte von Bitcoin. Nichts ist so volatil wie Bitcoin.</p>
+      <p>(Ausführlichere Antwort folgt)</p>
+
+      <h2 id="bitcoinbetter">Ist Bitcoin besser als normales Geld?</h2>
+      <p>Es wird nur 21 Millionen Bitcoins geben. Normales Geld wie US Dollar oder Euro haben keine festgelete Inflation und können von Staaten und Privatbanken zum eigenen Profit gedruckt oder "geschöpft" werden. Das erhöht die Geldmenge was
+        wiederum jedes Jahr den Wert des Geldes sinken lässt. Bitcoin kann nicht von Staaten oder Privatbanken auf diese Weise missbraucht werden. In Bitcoin gelten für alle dieselben Regeln.</p>
+      <p>Das folgende Video erklärt wie die Geldschöpfung bei den Banken funktionert:</p>
+
+      <div class="video-container"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/5e4qAergE3Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <br>
+
+      <!--<h2 id="moneyandstate">Why is the separation of money and state important?</h2>
+            <p>(answer will follow shortly) Quantitative Easing, Currency Wars, Debt, haircuts...</p>-->
+
+      <h2 id="whocodes">Wer schreibt den Bitcoin code?</h2>
+      <p>Bitcoin ist ein open source Projekt bei dem jeder mit ausreichenden Kenntnissen mitwirken kann: <a href="https://github.com/bitcoin/bitcoin" target="_blank">github.com/bitcoin/bitcoin</a></p>
+
+      <p>Hier ist eine Liste von allen Menschen die zum Bitcoin code beigetragen haben: <a href="https://github.com/bitcoin/bitcoin/graphs/contributors" target="_blank">Bitcoin Github contributors</a></p>
+      <br>
+      <h2 id="howitworks">Wie funktioniert Bitcoin?</h2>
+      <p>Bitcoins are created in a process called mining which also makes Bitcoin so secure. Computers do a lot of calculations and get Bitcoins as a reward. To "hack" Bitcoin you would need at least 51% of all the energy that all Bitcoin miners in
+        the entire world are using for a prolonged period of time.</p>
+
+      <p>Dieses Video gibt einen guten überblick darüber wie eine Blockchain funktioniert</p>
+      <br>
+
+      <div class="video-container"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4FU3tc-foaI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <br>
+
+      <p>Dieses englische Video erklärt das zusammenspiel von hashes, nonces und mining nochmal sehr ausführlich und leicht nachvollziehbar.</p>
+
+      <div class="video-container"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_160oMzblY8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <br>
+      <h2 id="stateattack">Könnte ein Staat Bitcoins angreifen?</h2>
+      <p><b>A State can not buy enough hardware for a 51% attack.</b> The number of manufacturers is well known and there is a shortage of miners. All manufacturing facilities are running at full capacity producing chips for graphics cards, AI and
+        supercomputers. Because the existing installed number of miners is 4 or 5 times more than the annual production, a nation state would need to buy for 2 years, all the supply of hardware manufacturers worldwide, just to be able to reach 51%.
+        This makes entering the market secretly impossible.
+        <p />
+
+        <p><b>Only theoretically can a state manufacture enough miners for a 51% attack.</b> It has to spend billions for the facilities, billions for the production and hundreds of millions for the energy and would not achieve much. <b>With a 51%
+            attack you do not control Bitcoin.</b> The only thing you can do is make fake transactions and block transactions for a short period of time. Both attacks are identifiable and can be remedied by the Bitcoin ecosystem.</p>
+
+        <p>The state can get mining rewards about half the time but these Bitcoins would be identifiable and can be rejected by the Bitcoin community. Hence, the state can not profit from mining and would be competing with profitable miners.</p>
+
+        <p>After a short period of time, the Bitcoin ecosystem would decide to fork off the attacking state miners and cause a chain split (bifurcation of the bitcoin network into two):</p>
+
+
+        <p>
+          1. original-bitcoin-chain.</li>
+          2. state-attack-chain.</li>
+        </p>
+
+        <p>After this bifurcation the attacking state miners will be mining on the state-attack-chain and not affect the original-bitcoin-chain anymore.</p>
+
+        <p>The result of this failed nation state attack would increase the confidence in Bitcoin and send Bitcoin prices soaring.</p>
+
+
+        <h2 id="toolateforbitcoin">Ist es zu spät um Bitcoins zu kaufen?</h2>
+        <font color="red">This is not financial advice! Models are not accurate predictions of the future.</font>
+
+        <p>In the Bitcoin <a href="https://medium.com/@david.andlinger.privat/modellierung-von-bitcoins-wert-mit-stock-to-flow-fe706e7eeac9" target="_blank">stock-to-flow model</a> developed by <a href="https://twitter.com/100trillionUSD" target="_blank">PlanB</a>, the Bitcoin price reaches a price of 105000$ by 2021 and
+          1300000$ by 2025. Stock-to-flow models accurately calculate the value of Gold and other precious metals. According to this model you are still not too late if you want to profit from Bitcoins price appreciation. If Bitcoin only catches up
+          with Golds 8 trillion dollar marketcap, one Bitcoin would be worth around 300000$.</p>
+
+        <p>Bitcoin stock-to-flow model graph:</p>
+
+        <a href="https://raw.githubusercontent.com/bitcoineasy/images/master/stock-to-flow.png" target="_blank"> <img src="https://raw.githubusercontent.com/bitcoineasy/images/master/stock-to-flow.png" alt="Bitcoin stock-to-flow model"
+            class="responsive" /></a>
+        <p>source: <a href="https://digitalik.net/btc" target="_blank">digitalik.net/btc</a></p>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript">
+          $(document).ready(function() {
+            $('.toggle').click(function() {
+              $('.toggle').toggleClass('active')
+              $('body').toggleClass('night')
+            })
+          })
+        </script>
+
+        <script>
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function() {
+            scrollFunction()
+          };
+
+          function scrollFunction() {
+            if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+              document.getElementById("myBtn").style.display = "block";
+            } else {
+              document.getElementById("myBtn").style.display = "none";
+            }
+          }
+
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+          }
+        </script>
+
+    </article>
+    <aside class="aside aside-1"></aside>
+    <aside class="aside aside-2"></aside>
+    <footer class="footer">
+      <p style="font-size:14px">Donations BTC: 3BfT2roBHqdd164ZJzGzSNoZMSZvjLVD8F</p>
+      <p style="font-size:14px">contact: <SCRIPT TYPE="text/javascript">
+          emailE = 'protonmail.ch'
+
+          emailE = ('bitcoinsage' + '@' + emailE)
+
+          document.write('<A href="mailto:' + emailE + '">' + emailE + '</a>')
+        </script>
+      </p>
+
+    </footer>
+  </div>
+
+</body>
+
+</html>
