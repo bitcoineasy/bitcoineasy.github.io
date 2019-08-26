@@ -274,41 +274,38 @@
 }
 
 
+.fa-moon-o {
+  font-size:25px;
+}
 
 .toggle {
   position: absolute;
   top: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #fff;
-  border: 2px solid #142634;
-  width: 50px;
+  background:;
+  border:;
+  width: 25px;
   height: 25px;
   cursor: pointer;
   border-radius: 20px;
   transition: 0.5s;
 }
 
-.toggle.active {
-  background: #142634;
-  border: 2px solid #fff;
-}
+/*.nightmode.active {
+  background:;
+  border:;
+}*/
 
 .toggle:before {
-  content: '';
+  content:;
   position: absolute;
   top: 2px;
   left: 2px;
   width: 16px;
   height: 16px;
-  background: #142634;
+  background:;
   border-radius: 50%;
-  transition: 0.5s;
-}
-
-.toggle.active:before {
-  left: 27px;
-  background: #fff;
 }
 
 .content h1 {
@@ -339,7 +336,10 @@ body {
   transition: 0.5s;
 }
 
-body.night {
+body.night,
+body.night .content .navbar,
+body.night .panel,
+body.night .toggle {
   background: #142634;
 }
 
@@ -360,10 +360,7 @@ body.night .footer {
   color: #ccad00;
 }
 
-body.night .content .navbar,
-body.night .panel {
-  background-color: #142634;
-}
+
 
 body.night .navbar a:hover,
 body.night .content .dropdown-content a
@@ -371,7 +368,8 @@ body.night .content .dropdown-content a
   color: black;
 }
 
-body.night .dropdown .dropbtn
+body.night .dropdown .dropbtn,
+body.night .fa-moon-o
 {
   color: white;
 }
