@@ -270,6 +270,19 @@
 }
 
 
+.toc_list a:link {
+  color: #0000CD;
+}
+
+.toc_list a:visited {
+  color: #0000CD;
+}
+
+.toc_list li {
+  line-height: 2;
+}
+
+
 .fa-moon-o {
   font-size:25px;
 }
