@@ -355,6 +355,7 @@ body.night .content p,
 body.night .content h2,
 body.night .content h3,
 body.night .content i,
+body.night .content ul,
 body.night .resources_list li,
 body.night .aside h3 {
   color: #BDC7C1;
