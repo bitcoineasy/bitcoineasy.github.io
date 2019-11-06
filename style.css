@@ -247,6 +247,11 @@
   height: 100%;
 }
 
+.donate {
+  height: 100px;
+  width: 100px;
+}
+
 /* resposive images */
 .responsive {
   width: 100%;
